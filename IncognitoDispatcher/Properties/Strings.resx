@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="0" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <!-- App Name -->
+  <data name="AppName" xml:space="preserve"><value>无痕分拨器</value></data>
+  <data name="AppSubtitle" xml:space="preserve"><value>从任意应用点击链接，自动以无痕/隐私模式打开</value></data>
+
+  <!-- Tray Menu -->
+  <data name="TrayEnabled" xml:space="preserve"><value>启用无痕模式</value></data>
+  <data name="TrayChangeBrowser" xml:space="preserve"><value>换浏览器</value></data>
+  <data name="TraySettings" xml:space="preserve"><value>打开设置</value></data>
+  <data name="TrayExit" xml:space="preserve"><value>退出</value></data>
+  <data name="TrayEnabledStatus" xml:space="preserve"><value>已启用</value></data>
+  <data name="TrayDisabledStatus" xml:space="preserve"><value>已禁用</value></data>
+  <data name="TrayBrowserLabel" xml:space="preserve"><value>浏览器:</value></data>
+  <data name="TrayNoneSelected" xml:space="preserve"><value>未选择</value></data>
+
+  <!-- MainWindow -->
+  <data name="BrowserSection" xml:space="preserve"><value>浏览器</value></data>
+  <data name="BrowserNotSelected" xml:space="preserve"><value>未选择</value></data>
+  <data name="BrowserPickPrompt" xml:space="preserve"><value>未选择 — 点击链接时会弹出选择框</value></data>
+  <data name="BrowserChange" xml:space="preserve"><value>更换浏览器</value></data>
+  <data name="BrowserSelect" xml:space="preserve"><value>选择浏览器</value></data>
+  <data name="BrowserNoneDetected" xml:space="preserve"><value>未检测到浏览器</value></data>
+
+  <data name="SettingsSection" xml:space="preserve"><value>设置</value></data>
+  <data name="SettingsIncognito" xml:space="preserve"><value>启用无痕模式</value></data>
+  <data name="SettingsAutoStart" xml:space="preserve"><value>开机启动</value></data>
+
+  <data name="ProtocolSection" xml:space="preserve"><value>协议处理器</value></data>
+  <data name="ProtocolDetecting" xml:space="preserve"><value>检测中...</value></data>
+  <data name="ProtocolInstalled" xml:space="preserve"><value>已注册为 http/https 处理器</value></data>
+  <data name="ProtocolNotInstalled" xml:space="preserve"><value>未注册</value></data>
+  <data name="ProtocolInstall" xml:space="preserve"><value>注册</value></data>
+  <data name="ProtocolUninstall" xml:space="preserve"><value>卸载</value></data>
+  <data name="ProtocolInstallSuccess" xml:space="preserve"><value>注册成功！</value></data>
+  <data name="ProtocolUninstallSuccess" xml:space="preserve"><value>已卸载</value></data>
+  <data name="ProtocolUninstallFail" xml:space="preserve"><value>卸载失败</value></data>
+  <data name="ProtocolOpenSettingsHint" xml:space="preserve"><value>已打开设置页面。请找到 http 和 https，选择「无痕分拨器」。</value></data>
+
+  <data name="FooterHint" xml:space="preserve"><value>关闭窗口后仍在托盘运行 · 双击托盘图标重新打开</value></data>
+
+  <!-- BrowserPickerWindow -->
+  <data name="PickerTitle" xml:space="preserve"><value>选择浏览器</value></data>
+  <data name="PickerSubtitle" xml:space="preserve"><value>将以无痕/隐私模式打开链接</value></data>
+  <data name="PickerConfirm" xml:space="preserve"><value>确定</value></data>
+  <data name="PickerCancel" xml:space="preserve"><value>取消</value></data>
+
+  <!-- ProtocolHandler -->
+  <data name="HandlerUacPrompt" xml:space="preserve"><value>需要管理员权限，请在 UAC 弹窗中点击「是」</value></data>
+  <data name="HandlerUacDenied" xml:space="preserve"><value>您拒绝了管理员权限请求。</value></data>
+  <data name="HandlerRegistryFailed" xml:space="preserve"><value>注册表未更新。</value></data>
+  <data name="HandlerLogLabel" xml:space="preserve"><value>日志:</value></data>
+  <data name="HandlerNoLog" xml:space="preserve"><value>无日志</value></data>
+  <data name="HandlerException" xml:space="preserve"><value>异常:</value></data>
+  <data name="HandlerOpenSettingsMsg" xml:space="preserve"><value>已打开设置页面。请在「默认应用」中将 http 和 https 的默认浏览器选择为「无痕分拨器」。</value></data>
+  <data name="HandlerDescription" xml:space="preserve"><value>自动以无痕/隐私模式打开浏览器链接</value></data>
+</root>

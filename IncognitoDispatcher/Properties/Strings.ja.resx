@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType><xsd:choice maxOccurs="unbounded">
+        <xsd:element name="data"><xsd:complexType><xsd:sequence><xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" /></xsd:sequence><xsd:attribute name="name" type="xsd:string" msdata:Ordinal="0" /></xsd:complexType></xsd:element>
+        <xsd:element name="resheader"><xsd:complexType><xsd:sequence><xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" /></xsd:sequence><xsd:attribute name="name" type="xsd:string" use="required" /></xsd:complexType></xsd:element>
+      </xsd:choice></xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+  <data name="AppName" xml:space="preserve"><value>シークレットディスパッチャー</value></data>
+  <data name="AppSubtitle" xml:space="preserve"><value>任意のアプリからリンクをクリックすると、シークレット/プライベートモードで自動的に開きます</value></data>
+  <data name="TrayEnabled" xml:space="preserve"><value>シークレットモードを有効</value></data>
+  <data name="TrayChangeBrowser" xml:space="preserve"><value>ブラウザを変更</value></data>
+  <data name="TraySettings" xml:space="preserve"><value>設定を開く</value></data>
+  <data name="TrayExit" xml:space="preserve"><value>終了</value></data>
+  <data name="TrayEnabledStatus" xml:space="preserve"><value>有効</value></data>
+  <data name="TrayDisabledStatus" xml:space="preserve"><value>無効</value></data>
+  <data name="TrayBrowserLabel" xml:space="preserve"><value>ブラウザ:</value></data>
+  <data name="TrayNoneSelected" xml:space="preserve"><value>未選択</value></data>
+  <data name="BrowserSection" xml:space="preserve"><value>ブラウザ</value></data>
+  <data name="BrowserNotSelected" xml:space="preserve"><value>未選択</value></data>
+  <data name="BrowserPickPrompt" xml:space="preserve"><value>未選択 — リンクをクリックすると選択画面が表示されます</value></data>
+  <data name="BrowserChange" xml:space="preserve"><value>ブラウザを変更</value></data>
+  <data name="BrowserSelect" xml:space="preserve"><value>ブラウザを選択</value></data>
+  <data name="BrowserNoneDetected" xml:space="preserve"><value>ブラウザが見つかりません</value></data>
+  <data name="SettingsSection" xml:space="preserve"><value>設定</value></data>
+  <data name="SettingsIncognito" xml:space="preserve"><value>シークレットモードを有効</value></data>
+  <data name="SettingsAutoStart" xml:space="preserve"><value>ログイン時に起動</value></data>
+  <data name="ProtocolSection" xml:space="preserve"><value>プロトコルハンドラ</value></data>
+  <data name="ProtocolDetecting" xml:space="preserve"><value>検出中...</value></data>
+  <data name="ProtocolInstalled" xml:space="preserve"><value>http/https ハンドラとして登録済み</value></data>
+  <data name="ProtocolNotInstalled" xml:space="preserve"><value>未登録</value></data>
+  <data name="ProtocolInstall" xml:space="preserve"><value>登録</value></data>
+  <data name="ProtocolUninstall" xml:space="preserve"><value>解除</value></data>
+  <data name="ProtocolInstallSuccess" xml:space="preserve"><value>登録成功！</value></data>
+  <data name="ProtocolUninstallSuccess" xml:space="preserve"><value>解除済み</value></data>
+  <data name="ProtocolUninstallFail" xml:space="preserve"><value>解除に失敗しました</value></data>
+  <data name="ProtocolOpenSettingsHint" xml:space="preserve"><value>設定ページを開きました。http と https を見つけて「シークレットディスパッチャー」を選択してください。</value></data>
+  <data name="FooterHint" xml:space="preserve"><value>閉じてもトレイで動作中 · トレイアイコンをダブルクリックで再表示</value></data>
+  <data name="PickerTitle" xml:space="preserve"><value>ブラウザを選択</value></data>
+  <data name="PickerSubtitle" xml:space="preserve"><value>リンクはシークレット/プライベートモードで開きます</value></data>
+  <data name="PickerConfirm" xml:space="preserve"><value>OK</value></data>
+  <data name="PickerCancel" xml:space="preserve"><value>キャンセル</value></data>
+  <data name="HandlerUacPrompt" xml:space="preserve"><value>管理者権限が必要です。UAC プロンプトで「はい」をクリックしてください。</value></data>
+  <data name="HandlerUacDenied" xml:space="preserve"><value>管理者権限が拒否されました。</value></data>
+  <data name="HandlerRegistryFailed" xml:space="preserve"><value>レジストリが更新されませんでした。</value></data>
+  <data name="HandlerLogLabel" xml:space="preserve"><value>ログ:</value></data>
+  <data name="HandlerNoLog" xml:space="preserve"><value>ログなし</value></data>
+  <data name="HandlerException" xml:space="preserve"><value>エラー:</value></data>
+  <data name="HandlerOpenSettingsMsg" xml:space="preserve"><value>設定を開きました。「規定のアプリ」で http と https を「シークレットディスパッチャー」に設定してください。</value></data>
+  <data name="HandlerDescription" xml:space="preserve"><value>ブラウザリンクをシークレット/プライベートモードで自動的に開きます</value></data>
+</root>

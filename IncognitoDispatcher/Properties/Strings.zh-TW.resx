@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType><xsd:choice maxOccurs="unbounded">
+        <xsd:element name="data"><xsd:complexType><xsd:sequence><xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" /></xsd:sequence><xsd:attribute name="name" type="xsd:string" msdata:Ordinal="0" /></xsd:complexType></xsd:element>
+        <xsd:element name="resheader"><xsd:complexType><xsd:sequence><xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" /></xsd:sequence><xsd:attribute name="name" type="xsd:string" use="required" /></xsd:complexType></xsd:element>
+      </xsd:choice></xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+  <data name="AppName" xml:space="preserve"><value>無痕分撥器</value></data>
+  <data name="AppSubtitle" xml:space="preserve"><value>從任意應用點擊連結，自動以無痕/隱私模式開啟</value></data>
+  <data name="TrayEnabled" xml:space="preserve"><value>啟用無痕模式</value></data>
+  <data name="TrayChangeBrowser" xml:space="preserve"><value>換瀏覽器</value></data>
+  <data name="TraySettings" xml:space="preserve"><value>開啟設定</value></data>
+  <data name="TrayExit" xml:space="preserve"><value>退出</value></data>
+  <data name="TrayEnabledStatus" xml:space="preserve"><value>已啟用</value></data>
+  <data name="TrayDisabledStatus" xml:space="preserve"><value>已停用</value></data>
+  <data name="TrayBrowserLabel" xml:space="preserve"><value>瀏覽器:</value></data>
+  <data name="TrayNoneSelected" xml:space="preserve"><value>未選擇</value></data>
+  <data name="BrowserSection" xml:space="preserve"><value>瀏覽器</value></data>
+  <data name="BrowserNotSelected" xml:space="preserve"><value>未選擇</value></data>
+  <data name="BrowserPickPrompt" xml:space="preserve"><value>未選擇 — 點擊連結時會彈出選擇框</value></data>
+  <data name="BrowserChange" xml:space="preserve"><value>更換瀏覽器</value></data>
+  <data name="BrowserSelect" xml:space="preserve"><value>選擇瀏覽器</value></data>
+  <data name="BrowserNoneDetected" xml:space="preserve"><value>未偵測到瀏覽器</value></data>
+  <data name="SettingsSection" xml:space="preserve"><value>設定</value></data>
+  <data name="SettingsIncognito" xml:space="preserve"><value>啟用無痕模式</value></data>
+  <data name="SettingsAutoStart" xml:space="preserve"><value>開機啟動</value></data>
+  <data name="ProtocolSection" xml:space="preserve"><value>協定處理器</value></data>
+  <data name="ProtocolDetecting" xml:space="preserve"><value>偵測中...</value></data>
+  <data name="ProtocolInstalled" xml:space="preserve"><value>已註冊為 http/https 處理器</value></data>
+  <data name="ProtocolNotInstalled" xml:space="preserve"><value>未註冊</value></data>
+  <data name="ProtocolInstall" xml:space="preserve"><value>註冊</value></data>
+  <data name="ProtocolUninstall" xml:space="preserve"><value>解除安裝</value></data>
+  <data name="ProtocolInstallSuccess" xml:space="preserve"><value>註冊成功！</value></data>
+  <data name="ProtocolUninstallSuccess" xml:space="preserve"><value>已解除安裝</value></data>
+  <data name="ProtocolUninstallFail" xml:space="preserve"><value>解除安裝失敗</value></data>
+  <data name="ProtocolOpenSettingsHint" xml:space="preserve"><value>已開啟設定頁面。請找到 http 和 https，選擇「無痕分撥器」。</value></data>
+  <data name="FooterHint" xml:space="preserve"><value>關閉視窗後仍在系統匣執行 · 雙擊系統匣圖示重新開啟</value></data>
+  <data name="PickerTitle" xml:space="preserve"><value>選擇瀏覽器</value></data>
+  <data name="PickerSubtitle" xml:space="preserve"><value>將以無痕/隱私模式開啟連結</value></data>
+  <data name="PickerConfirm" xml:space="preserve"><value>確定</value></data>
+  <data name="PickerCancel" xml:space="preserve"><value>取消</value></data>
+  <data name="HandlerUacPrompt" xml:space="preserve"><value>需要管理員權限，請在 UAC 彈窗中點擊「是」</value></data>
+  <data name="HandlerUacDenied" xml:space="preserve"><value>您拒絕了管理員權限請求。</value></data>
+  <data name="HandlerRegistryFailed" xml:space="preserve"><value>登錄碼未更新。</value></data>
+  <data name="HandlerLogLabel" xml:space="preserve"><value>日誌:</value></data>
+  <data name="HandlerNoLog" xml:space="preserve"><value>無日誌</value></data>
+  <data name="HandlerException" xml:space="preserve"><value>異常:</value></data>
+  <data name="HandlerOpenSettingsMsg" xml:space="preserve"><value>已開啟設定頁面。請在「預設應用程式」中將 http 和 https 的預設瀏覽器選擇為「無痕分撥器」。</value></data>
+  <data name="HandlerDescription" xml:space="preserve"><value>自動以無痕/隱私模式開啟瀏覽器連結</value></data>
+</root>

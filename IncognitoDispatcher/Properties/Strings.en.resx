@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="0" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+  <data name="AppName" xml:space="preserve"><value>Incognito Dispatcher</value></data>
+  <data name="AppSubtitle" xml:space="preserve"><value>Open links from any app in incognito/private mode automatically</value></data>
+
+  <data name="TrayEnabled" xml:space="preserve"><value>Enable Incognito</value></data>
+  <data name="TrayChangeBrowser" xml:space="preserve"><value>Change Browser</value></data>
+  <data name="TraySettings" xml:space="preserve"><value>Settings</value></data>
+  <data name="TrayExit" xml:space="preserve"><value>Exit</value></data>
+  <data name="TrayEnabledStatus" xml:space="preserve"><value>Enabled</value></data>
+  <data name="TrayDisabledStatus" xml:space="preserve"><value>Disabled</value></data>
+  <data name="TrayBrowserLabel" xml:space="preserve"><value>Browser:</value></data>
+  <data name="TrayNoneSelected" xml:space="preserve"><value>Not selected</value></data>
+
+  <data name="BrowserSection" xml:space="preserve"><value>Browser</value></data>
+  <data name="BrowserNotSelected" xml:space="preserve"><value>Not selected</value></data>
+  <data name="BrowserPickPrompt" xml:space="preserve"><value>Not selected — picker will appear when you click a link</value></data>
+  <data name="BrowserChange" xml:space="preserve"><value>Change Browser</value></data>
+  <data name="BrowserSelect" xml:space="preserve"><value>Select Browser</value></data>
+  <data name="BrowserNoneDetected" xml:space="preserve"><value>No browsers detected</value></data>
+
+  <data name="SettingsSection" xml:space="preserve"><value>Settings</value></data>
+  <data name="SettingsIncognito" xml:space="preserve"><value>Enable incognito mode</value></data>
+  <data name="SettingsAutoStart" xml:space="preserve"><value>Start at login</value></data>
+
+  <data name="ProtocolSection" xml:space="preserve"><value>Protocol Handler</value></data>
+  <data name="ProtocolDetecting" xml:space="preserve"><value>Detecting...</value></data>
+  <data name="ProtocolInstalled" xml:space="preserve"><value>Registered as http/https handler</value></data>
+  <data name="ProtocolNotInstalled" xml:space="preserve"><value>Not registered</value></data>
+  <data name="ProtocolInstall" xml:space="preserve"><value>Register</value></data>
+  <data name="ProtocolUninstall" xml:space="preserve"><value>Unregister</value></data>
+  <data name="ProtocolInstallSuccess" xml:space="preserve"><value>Registered successfully!</value></data>
+  <data name="ProtocolUninstallSuccess" xml:space="preserve"><value>Unregistered</value></data>
+  <data name="ProtocolUninstallFail" xml:space="preserve"><value>Unregister failed</value></data>
+  <data name="ProtocolOpenSettingsHint" xml:space="preserve"><value>Settings opened. Find http and https, select "Incognito Dispatcher".</value></data>
+
+  <data name="FooterHint" xml:space="preserve"><value>Runs in tray when closed · Double-click tray icon to reopen</value></data>
+
+  <data name="PickerTitle" xml:space="preserve"><value>Select Browser</value></data>
+  <data name="PickerSubtitle" xml:space="preserve"><value>Links will open in incognito/private mode</value></data>
+  <data name="PickerConfirm" xml:space="preserve"><value>OK</value></data>
+  <data name="PickerCancel" xml:space="preserve"><value>Cancel</value></data>
+
+  <data name="HandlerUacPrompt" xml:space="preserve"><value>Admin rights required. Click "Yes" in the UAC prompt.</value></data>
+  <data name="HandlerUacDenied" xml:space="preserve"><value>Admin permission was denied.</value></data>
+  <data name="HandlerRegistryFailed" xml:space="preserve"><value>Registry not updated.</value></data>
+  <data name="HandlerLogLabel" xml:space="preserve"><value>Log:</value></data>
+  <data name="HandlerNoLog" xml:space="preserve"><value>No log</value></data>
+  <data name="HandlerException" xml:space="preserve"><value>Error:</value></data>
+  <data name="HandlerOpenSettingsMsg" xml:space="preserve"><value>Settings opened. In "Default apps", set http and https to "Incognito Dispatcher".</value></data>
+  <data name="HandlerDescription" xml:space="preserve"><value>Automatically open browser links in incognito/private mode</value></data>
+</root>
