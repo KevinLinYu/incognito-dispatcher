@@ -1,5 +1,4 @@
 using System;
-using System.Linq;
 using System.Windows;
 using System.Windows.Forms;
 using S = IncognitoDispatcher.Properties.Strings;
@@ -14,9 +13,10 @@ public partial class App : Application
     protected override void OnStartup(StartupEventArgs e)
     {
         base.OnStartup(e);
-        // URL dispatch mode
-        var args = Environment.GetCommandLineArgs().Skip(1).ToArray();
-        foreach (var arg in args)
+
+        // URL dispatch mode — if launched with a URL argument, dispatch and exit
+        var args = Environment.GetCommandLineArgs();
+        foreach (var arg in args.Skip(1))
         {
             var trimmed = arg.Trim('"');
             if (trimmed.StartsWith("http://", StringComparison.OrdinalIgnoreCase) ||
@@ -27,6 +27,7 @@ public partial class App : Application
                 return;
             }
         }
+
         // GUI tray mode
         InitTrayIcon();
         var s = Settings.Load();

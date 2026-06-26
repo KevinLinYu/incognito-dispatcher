@@ -97,25 +97,32 @@ public class Settings
 
     // ===== Persistence =====
 
+    private static Settings? _cached;
+    private static bool _loaded;
+
     /// <summary>
     /// Load settings from disk (returns defaults if file does not exist).
+    /// Results are cached for the lifetime of the process.
     /// </summary>
     public static Settings Load()
     {
+        if (_loaded) return _cached!;
+        _loaded = true;
         try
         {
             if (File.Exists(SettingsPath))
             {
                 var json = File.ReadAllText(SettingsPath);
-                return JsonSerializer.Deserialize<Settings>(json) ?? new Settings();
+                _cached = JsonSerializer.Deserialize<Settings>(json) ?? new Settings();
+                return _cached;
             }
         }
         catch
         {
             // Load failed, return defaults
         }
-
-        return new Settings();
+        _cached = new Settings();
+        return _cached;
     }
 
     /// <summary>
@@ -123,6 +130,7 @@ public class Settings
     /// </summary>
     public void Save()
     {
+        _cached = this; // sync cache
         try
         {
             Directory.CreateDirectory(AppDataDir);

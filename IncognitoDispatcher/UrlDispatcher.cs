@@ -1,33 +1,75 @@
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
-using System.Windows;
+using System.Text;
 using Microsoft.Win32;
 
 namespace IncognitoDispatcher;
 
 internal static class UrlDispatcher
 {
-    public static void Run(string url)
+    private static readonly string LogPath = Path.Combine(
+        Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
+        "IncognitoDispatcher", "dispatch.log");
+
+    private static void Log(string msg)
     {
         try
         {
+            Directory.CreateDirectory(Path.GetDirectoryName(LogPath)!);
+            File.AppendAllText(LogPath, $"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] {msg}\n", Encoding.UTF8);
+        }
+        catch { }
+    }
+
+    public static void Run(string url)
+    {
+        Log($"Dispatch start: {url}");
+        try
+        {
             var settings = Settings.Load();
+            Log($"Settings loaded, Enabled={settings.Enabled}, BrowserPath={settings.SelectedBrowserPath ?? "(null)"}");
+
             if (!string.IsNullOrEmpty(settings.SelectedBrowserPath))
             {
-                LaunchBrowser(settings.SelectedBrowserPath, url, settings);
+                if (File.Exists(settings.SelectedBrowserPath))
+                {
+                    LaunchBrowser(settings.SelectedBrowserPath, url, settings);
+                    return;
+                }
+                Log($"SelectedBrowserPath not found: {settings.SelectedBrowserPath}, clearing");
+                settings.SelectedBrowserPath = null;
+                settings.SelectedBrowserName = null;
+                settings.Save();
+            }
+
+            // Fast path: detect system default browser
+            var detected = BrowserDetector.DetectDefaultBrowser();
+            Log($"DetectDefaultBrowser: {detected?.DisplayName ?? "(null)"} -> {detected?.ExecutablePath ?? "(null)"}");
+
+            if (detected != null && File.Exists(detected.ExecutablePath))
+            {
+                settings.SelectedBrowserPath = detected.ExecutablePath;
+                settings.SelectedBrowserName = detected.DisplayName;
+                settings.Save();
+                LaunchBrowser(detected.ExecutablePath, url, settings);
                 return;
             }
+
+            // Fallback: scan all installed browsers
             var browsers = GetAllBrowsers();
+            Log($"GetAllBrowsers found {browsers.Count} browsers");
+
             if (browsers.Count == 0)
             {
+                Log("No browsers found, falling back to ShellExecute");
                 Process.Start(new ProcessStartInfo(url) { UseShellExecute = true });
                 return;
             }
 
-            // Protocol handler mode (no window context): use first browser directly, no picker
-            // User can change via tray menu "Change Browser"
             var chosen = browsers[0];
+            Log($"Chosen: {chosen.Name} -> {chosen.Path}");
             settings.SelectedBrowserPath = chosen.Path;
             settings.SelectedBrowserName = chosen.Name;
             settings.Save();
@@ -35,6 +77,7 @@ internal static class UrlDispatcher
         }
         catch (Exception ex)
         {
+            Log($"Exception: {ex}");
             try { Process.Start(new ProcessStartInfo(url) { UseShellExecute = true }); } catch { }
         }
     }

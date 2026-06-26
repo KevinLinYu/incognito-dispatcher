@@ -34,18 +34,18 @@ When a URL is opened from any application — Outlook, Telegram, a PDF reader, o
 dotnet build -c Release
 ```
 
-### Publish as a self-contained single file
+### Publish as self-contained (multi-file)
 
 ```bash
 dotnet publish IncognitoDispatcher/IncognitoDispatcher.csproj \
   -c Release -r win-x64 --self-contained \
-  -p:PublishSingleFile=true -o publish
+  -o publish/self-contained
 ```
 
 ### Run
 
 ```bash
-.\publish\IncognitoDispatcher.exe
+.\publish\self-contained\IncognitoDispatcher.exe
 # or
 dotnet run --project IncognitoDispatcher
 ```
